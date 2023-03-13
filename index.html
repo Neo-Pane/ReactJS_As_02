@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      #root {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var main_container = {
+        borderBottom: "2px solid black",
+        fontSize: "17px",
+        display: "flex",
+        flexDirection: "column",
+        height: "10%",
+        width: "100%",
+        paddingBottom: "10px",
+      };
+      var main_container1 = {
+        display: "flex",
+        flexDirection: "row",
+      };
+
+      var main_container22 = {
+        paddingRight: "5px",
+      };
+      function Div1() {
+        return (
+          <div style={main_container}>
+            <h3>Neeraj Dwivedi</h3>
+            <p>Full Stack Developer</p>
+            <div style={main_container1}>
+              <div style={main_container22}>
+                <a
+                  href="https://www.linkedin.com/in/neeraj-dwivedi-315238168/"
+                  target="_blank"
+                >
+                  Linkedin
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/Neo-Pane" target="_blank">
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+        );
+      }
+
+      function Div2() {
+        return (
+          <div
+            style={{
+              borderBottom: "2px solid black",
+              paddingBottom: "10px",
+            }}
+          >
+            <h2>Experience</h2>
+            <h3>Geekster</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+              necessitatibus exercitationem ipsam iste illum eos magnam vel!
+              Consectetur dolorum illo earum? Obcaecati quaerat dolores quos,
+              voluptates incidunt minima consectetur necessitatibus, corporis a
+              beatae in iusto nemo facere! Laborum fugiat omnis veritatis
+              quibusdam temporibus sunt officia animi magni tempore vero quo
+              nisi doloribus expedita numquam adipisci, optio id cupiditate
+              beatae minima culpa error fuga? Laboriosam ipsa officia,
+              aspernatur eaque cumque praesentium voluptas dolorem! Illum
+              praesentium quae iste magnam quaerat corrupti et distinctio, quia
+              sed, dicta veritatis. Aliquam quae quod numquam sed excepturi
+              iusto nulla laboriosam quas, molestiae ipsa porro facere
+              consequuntur? Saepe magni enim quasi reiciendis laudantium,
+              doloremque quae id molestias minus, maxime quia error autem
+              molestiae voluptate fugiat officia aspernatur ipsa soluta eum
+              exercitationem, minima temporibus quo maiores vel? Provident,
+              sapiente! Porro ipsum, voluptatibus autem perspiciatis vitae
+              repellendus, iste obcaecati suscipit quidem quibusdam
+              exercitationem sed nobis velit possimus quasi natus.
+            </p>
+          </div>
+        );
+      }
+
+      function Div4() {
+        return (
+          <div
+            style={{
+              borderBottom: "2px solid black",
+              paddingBottom: "10px",
+            }}
+          >
+            <h2>Hobbies</h2>
+
+            <li>Reading Non-fiction</li>
+            <li>Writing Poems</li>
+            <li>Playing Video-Games</li>
+            <li>Listening to Music</li>
+          </div>
+        );
+      }
+      function Div3() {
+        return (
+          <div
+            style={{
+              borderBottom: "2px solid black",
+              paddingBottom: "10px",
+            }}
+          >
+            <h2>Skills</h2>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React Js </li>
+          </div>
+        );
+      }
+
+      function Component() {
+        return (
+          <div>
+            <Div1 />
+            <Div2 />
+            <Div3 />
+            <Div4 />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Component />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
